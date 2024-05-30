@@ -1,0 +1,417 @@
+:root{
+    --maincolor:#ff7800;
+    --black-color: #000;
+    --white-color: #fff
+}
+.main-color{
+    color: var(--maincolor);
+}
+*{
+    transition: all .5s;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(to top , transparent, var(--maincolor)) ;
+}
+
+@media (max-width:992px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+.head{
+    h2 {
+        span{
+            display: inline-block;
+            width: 200px;
+            background-color: var(--maincolor);
+            clip-path: polygon(100% 0%, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+        }
+    }
+}
+/* Scroll Up */
+.scroll-up{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--maincolor);
+    cursor: pointer;
+}
+/* Scroll Up */
+
+/* Start Navbar Section */
+nav .icons-navbar{
+    div{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    div:hover{
+        background-color: var(--maincolor) !important;
+    }
+    div:hover i{
+        color: var(--white-color) !important;
+    }
+}
+nav .navbar-nav .nav-item{
+    .nav-link{
+        transition: all .4s;
+    }
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background-color: var(--maincolor);
+        bottom: 3px;
+        left: 0;
+        transition: all .4s;
+    }
+    .nav-link:hover::before, .active::before{
+        width: 70%;
+    }
+    .active, .nav-link:hover{
+        color: var(--maincolor);
+    }
+}
+/* End Navbar Section */
+
+/* Start Cards Items */
+.login,.search,.cards-save{
+    z-index: 1;
+    position: absolute;
+    top: 75px;
+    left: -100%;
+    width: 400px;
+    opacity: 0;
+}
+.cards-save{
+    width: 400px;
+    .card-items .item{
+        .image-product {
+            img{
+                width: 100px;
+            }
+        }
+        i{
+            cursor: pointer;
+        }
+        i:hover{
+            color: var(--maincolor);
+        }
+    }
+    .total{
+        button{
+            width: 90%;
+            height: 40px;
+            transition: all .5s;
+        }
+        button:hover{
+            color: var(--white-color);
+            background-color: var(--maincolor);
+            border-color: var(--maincolor) !important;
+        }
+    }
+} 
+.active-card{
+    position: fixed;
+    left: 100px;
+    opacity: 1;
+}
+@media (max-width:992px) {
+    .active-card{
+        left: 0;
+    }
+}
+@media (max-width:575px) {
+    .login,.search,.cards-save{
+        width: 90%;
+    }
+}
+@media (max-width:384px) {
+    .login,.search,.cards-save{
+        top: 103px;
+    }
+    .icons-navbar{
+        margin-right: 0 !important;
+    }
+}
+/* End Cards Items */
+
+/* Start Home Section */
+#home{
+    background-image: url("../image/home-1.jpg");
+    background-size: cover;
+    background-position: center center;
+    h6{
+        font-weight: 400;
+    }
+    button{
+        transition: all .5s;
+    }
+    button:hover{
+        color: var(--white-color);
+        background-color: var(--maincolor);
+        border-color: var(--maincolor) !important;
+    }
+    .go-down{
+        width: 20px;
+        height: 40px;
+        bottom: 20px;
+        cursor: pointer;
+        i{
+            animation: go-down 1s alternate infinite;
+            position: relative;
+        }
+    }
+    .go-down:hover{
+        border-color: var(--maincolor) !important;
+    }
+    .go-down:hover i{
+        color: var(--maincolor) !important;
+    }
+}
+@keyframes go-down {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 12px;
+    }
+}
+/* End Home Section */
+
+/* Start Features Section And Categories Section */
+#features .card-feature,#categories .card-categories{
+    outline: 1px solid #eee;
+    outline-offset: -8px;
+    border-radius: 10px;
+    .card-info{
+        p{
+            font-size: 16px;
+        }
+        button{
+            transition: all .5s;
+        }
+        button:hover{
+            color: var(--white-color);
+            background-color: var(--maincolor);
+            border-color: var(--maincolor) !important;
+        }
+    }
+}
+#features .card-feature:hover,#categories .card-categories:hover{
+    outline: 1px solid var(--maincolor);
+    outline-offset: 0;
+}
+.card-categories .image-card img{
+    height: 200px;
+    object-fit: contain;
+}
+/* End Features Section And Categories Section */
+
+/* Start Products Section */
+#owl-demo .item,#owl-demo2 .item{
+    outline: 1px solid #eee;
+    outline-offset: -8px;
+    .product-info{
+        .rate-stars{
+            i{
+                color: rgb(255, 208, 0);
+            }
+        }
+        button{
+            transition: all .5s;
+        }
+        button:hover{
+            color: var(--white-color);
+            background-color: var(--maincolor);
+            border-color: var(--maincolor) !important;
+        }
+    }
+}
+#owl-demo .item:hover,#owl-demo2 .item:hover{
+    outline: 1px solid var(--maincolor);
+    outline-offset: -2px
+}
+#owl-demo .item img,#owl-demo2 .item img{
+    height: 300px;
+    object-fit: cover;
+}
+/* End Products Section */
+
+/* Start Reviews Section */
+#owl-demo3 .item{
+    margin: 3px;
+    outline: 1px solid #eee;
+    outline-offset: -8px;
+    border-radius: 8px;
+    .person-image{
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin: auto;
+        }
+    }
+    .rate-stars{
+        i{
+            color: rgb(255, 208, 0);
+        }
+    }
+}
+#owl-demo3 .item:hover{
+    outline: 1px solid var(--maincolor);
+    outline-offset: 0;
+}
+#owl-demo3 .item img{
+display: block;
+width: 100%;
+height: auto;
+}
+/* End Reviews Section */
+
+/* Start Blog Section */
+#blogs .blog-cards .blog-image{
+    overflow: hidden;
+    cursor: pointer;
+    .overlay{
+        top: 100%;
+        left: 0;
+        opacity: 0;
+        background-color: #0000004f;
+        .blog-icons i:hover{
+            color: var(--maincolor);
+            cursor: pointer;
+        }
+    }
+}
+#blogs .blog-cards:hover .overlay{
+    top: 0;
+    opacity: 1;
+}
+#blogs .blog-cards .blog-image:hover img{
+    transform: scale(1.1);
+}
+#blogs .blog-cards .review-info{
+    .main-title{
+        i{
+            color: var(--maincolor)
+        }
+    }
+    .review-data{
+        p{
+        font-size: 18px;
+        }
+        button{
+            transition: all .5s;
+        }
+        button:hover{
+            color: var(--white-color);
+            background-color: var(--maincolor);
+            border-color: var(--maincolor) !important;
+        }
+    }
+}
+/* End Blog Section */
+
+/* Start Contact Section */
+#contact{
+    .info-cotnact .information{
+        .social-icons{
+            i{
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                background-color: #ddd;
+            }
+            a:hover i{
+                background-color: var(--maincolor);
+                color: #fff;
+            }
+        }
+    }
+    .cotnact-numbers .information{
+        .numbers{
+            div{
+                cursor: pointer;
+                i{
+                    color: var(--maincolor);
+                    font-size: 14px;
+                }
+            }
+            div:hover{
+                transform: translateX(5px);
+            }
+        }
+    }
+    .links-cotnact .information{
+        .links-page{
+            a{
+                cursor: pointer;
+                i{
+                    color: var(--maincolor);
+                    font-size: 14px;
+                }
+            }
+            a:hover{
+                transform: translateX(5px);
+            }
+        }
+    }
+    .news-cotnact .information{
+        button{
+            transition: all .5s;
+        }
+        button:hover{
+            color: var(--white-color);
+            background-color: var(--maincolor);
+            border-color: var(--maincolor) !important;
+        }
+        .payment{
+            i{
+                font-size: 40px;
+            }
+            .visa{
+                color: rgb(22, 74, 133);
+            }
+            .masterCard{
+                color: rgb(255, 84, 84);
+            }
+            .paypal{
+                color: rgb(42, 142, 255);
+            }
+        }
+    }
+} 
+/* End Contact Section */
+
+/* Start Footer */
+footer{
+    background: linear-gradient(to top, #000 , #eee);
+    span{
+        color: var(--maincolor);
+    }
+}
+/* End Footer */
+
+
+

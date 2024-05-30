@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Grocery Store</title>
+</head>
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#navbar-scroll">
+    <!-- Scroll Up-->
+    <div class="scroll-up position-fixed text-center text-white rounded-circle z-3">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+    <!-- Scroll Up-->
+    <!-- Start Navbar Section -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow" id="navbar-scroll">
+        <div class="container">
+            <a class="navbar-brand fs-2 fw-bold" href="#home"><i class="fas fa-shopping-basket main-color"></i> Groco</a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="icons-navbar d-flex gap-3 ms-sm-auto">
+                <div class="glass-search ms-2 text-center d-flex justify-content-center align-items-center rounded-2">
+                    <i class="fa-solid fa-magnifying-glass fs-5"></i>
+                </div>
+                <div class="shopping text-center d-flex justify-content-center align-items-center rounded-2">
+                    <i class="fa-solid fa-cart-shopping fs-5"></i>
+                </div>
+                <div class="userLogin text-center d-flex justify-content-center align-items-center rounded-2">
+                    <i class="fa-solid fa-user fs-5"></i>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-0 position-relative" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-0 position-relative" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-0 position-relative" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-0 position-relative" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-0 position-relative" href="#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-0 position-relative" href="#blogs">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Start Inputs NavBar -->
+    <div class="search shadow rounded-2">
+        <input class="form-control" type="search" id="search" placeholder="Search...">
+    </div>
+    
+    <div class="login bg-white text-center p-4 rounded-3">
+        <h6 class="fw-bold fs-5 mb-3">Login Now</h6>
+            <input class="form-control my-2" type="email" name="email" id="email" placeholder="Your Email">
+            <input class="form-control my-2" type="password" name="password" id="password" placeholder="Enter Password">
+            <div class="resign">
+                <p>Forget Your Password <a href="#" class="main-color">Click Here</a></p>
+                <p>Don't Have An Account <a href="#" class="main-color">Create Now</a></p>
+            </div>
+    </div>
+    
+    <div class="cards-save shadow bg-white rounded-2">
+        <div class="row">
+            <div class="col-12">
+                <div class="card-items">
+                    <div class="item shadow d-flex justify-content-between align-items-center py-2 px-3">
+                        <div class="image-product">
+                            <img src="image/cart-1.jpg" alt="cart-1">
+                        </div>
+                        <div class="product-name">
+                            <h6 class="fw-bold">Watermelon</h6>
+                            <p>4.99$/- Qty : 1</p>
+                        </div>
+                        <div class="delete-icon">
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card-items">
+                    <div class="item shadow d-flex justify-content-between align-items-center py-2 px-3">
+                        <div class="image-product">
+                            <img src="image/cart-1.jpg" alt="cart-1">
+                        </div>
+                        <div class="product-name">
+                            <h6 class="fw-bold">Watermelon</h6>
+                            <p>4.99$/- Qty : 1</p>
+                        </div>
+                        <div class="delete-icon">
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card-items">
+                    <div class="item shadow d-flex justify-content-between align-items-center py-2 px-3">
+                        <div class="image-product">
+                            <img src="image/cart-1.jpg" alt="cart-1">
+                        </div>
+                        <div class="product-name">
+                            <h6 class="fw-bold">Watermelon</h6>
+                            <p>4.99$/- Qty : 1</p>
+                        </div>
+                        <div class="delete-icon">
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="total text-center">
+                    <p class="my-3">Total : 19.69/-</p>
+                    <button class="btn border-1 border-black mb-3 check-out">Check Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End NavBar -->
+    <!-- End Navbar Section -->
+
+    <!-- Start Home Section -->
+    <section class="home" id="home">
+        <div class="contanier vh-100 d-flex justify-content-center align-items-center text-center position-relative">
+            <div class="row">
+                <div class="col-12">
+                    <div class="home-info">
+                        <h1 class="fw-bold ">Fresh And <span class="main-color">Organic</span> Product For Your</h1>
+                        <h6 class="lead my-3">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus Reiciendis Provident Aliquid? Eos, Harum Dolore..</h6>
+                        <button class="btn border border-1 border-black px-4 ">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="go-down position-absolute translate-middle-x text-white border border-2 border-black rounded-5 fw-bold ">
+                <a href="#features"><i class="fa-solid fa-angles-down text-black"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- End Home Section -->
+
+    <!-- Start Features Sections -->
+    <section class="features py-5" id="features">
+        <div class="head text-center my-4">
+            <h2 class="fw-bold">Our <span class="py-2 text-white">Features</span></h2>
+        </div>
+        <div class="container">
+            <div class="row text-center gy-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-feature shadow py-3 px-2">
+                        <div class="image-card">
+                            <img class="w-100" src="image/feature-1.webp" alt="feature-1">
+                        </div>
+                        <div class="card-info mt-3">
+                            <h3>Fresh And Organic</h3>
+                            <p class="lead">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. A Ex Omnis Voluptates Accusantium.</p>
+                            <button class="btn border-1 border-black">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-feature shadow p-3">
+                        <div class="image-card">
+                            <img class="w-100" src="image/free-food-delivery4702.logowik.com.webp" alt="feature-2">
+                        </div>
+                        <div class="card-info">
+                            <h3>Fresh Dlivery</h3>
+                            <p class="lead">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. A Ex Omnis Voluptates Accusantium.</p>
+                            <button class="btn border-1 border-black">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-feature shadow p-3">
+                        <div class="image-card">
+                            <img class="w-100" src="image/easy-payment.jpg" alt="feature-3">
+                        </div>
+                        <div class="card-info">
+                            <h3>Easy Payment</h3>
+                            <p class="lead">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. A Ex Omnis Voluptates Accusantium.</p>
+                            <button class="btn border-1 border-black">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- End Features Sections -->
+
+    <!-- Start Products Section -->
+    <section class="products py-5" id="products">
+        <div class="head text-center my-4">
+            <h2 class="fw-bold">Our <span class="py-2 text-white">Products</span></h2>
+        </div>
+        <div class="container">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="image-product">
+                        <img class="w-100" src="image/product-1.png" alt="product-1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Orange</h3>
+                        <p>$4.99/-10.99/-</p>
+                        <div class="rate-stars my-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <button class="btn border-1 border-black">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="image-product">
+                        <img class="w-100" src="image/product-2.png" alt="product-2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Onion</h3>
+                        <p>$4.99/-10.99/-</p>
+                        <div class="rate-stars my-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <button class="btn border-1 border-black">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="image-product">
+                        <img class="w-100" src="image/product-3.png" alt="product-3">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Meat</h3>
+                        <p>$4.99/-10.99/-</p>
+                        <div class="rate-stars my-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <button class="btn border-1 border-black">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="image-product">
+                        <img class="w-100" src="image/product-4.jpg" alt="product-4">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Cabbage</h3>
+                        <p>$4.99/-10.99/-</p>
+                        <div class="rate-stars my-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <button class="btn border-1 border-black">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="owl-demo2" class="owl-carousel owl-theme">
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="image-product">
+                        <img class="w-100" src="image/product-5.png" alt="product-5">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Potato</h3>
+                        <p>$4.99/-10.99/-</p>
+                        <div class="rate-stars my-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <button class="btn border-1 border-black">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="image-product">
+                        <img class="w-100" src="image/product-6.png" alt="product-6">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Avocado</h3>
+                        <p>$4.99/-10.99/-</p>
+                        <div class="rate-stars my-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <button class="btn border-1 border-black">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="image-product">
+                        <img class="w-100" src="image/product-7.png" alt="product-7">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Carrot</h3>
+                        <p>$4.99/-10.99/-</p>
+                        <div class="rate-stars my-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <button class="btn border-1 border-black">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="image-product">
+                        <img class="w-100" src="image/product-8.jpg" alt="product-8">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Lemon</h3>
+                        <p>$4.99/-10.99/-</p>
+                        <div class="rate-stars my-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <button class="btn border-1 border-black">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Products Section -->
+
+    
+    <!-- Start Categories Sections -->
+    <section class="categories py-5" id="categories">
+        <div class="head text-center my-4">
+            <h2 class="fw-bold">Product <span class="py-2 text-white">Categories</span></h2>
+        </div>
+        <div class="container">
+            <div class="row text-center gy-3">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-categories shadow py-3 px-2">
+                        <div class="image-card">
+                            <img class="w-100" src="image/categories-1.jpg" alt="categories-1">
+                        </div>
+                        <div class="card-info mt-3">
+                            <h3>Fresh And Organic</h3>
+                            <p class="lead">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. A Ex Omnis Voluptates Accusantium.</p>
+                            <button class="btn border-1 border-black">Shope Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-categories shadow py-3 px-2">
+                        <div class="image-card">
+                            <img class="w-100" src="image/categories-2.jpg" alt="categories-2">
+                        </div>
+                        <div class="card-info mt-3">
+                            <h3>Fresh And Organic</h3>
+                            <p class="lead">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. A Ex Omnis Voluptates Accusantium.</p>
+                            <button class="btn border-1 border-black">Shope Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-categories shadow p-3">
+                        <div class="image-card">
+                            <img class="w-100" src="image/categories-3.png" alt="categories-3">
+                        </div>
+                        <div class="card-info">
+                            <h3>Fresh Dlivery</h3>
+                            <p class="lead">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. A Ex Omnis Voluptates Accusantium.</p>
+                            <button class="btn border-1 border-black">Shope Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-categories shadow p-3">
+                        <div class="image-card">
+                            <img class="w-100" src="image/categories-4.jpg" alt="categories-4">
+                        </div>
+                        <div class="card-info">
+                            <h3>Easy Payment</h3>
+                            <p class="lead">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. A Ex Omnis Voluptates Accusantium.</p>
+                            <button class="btn border-1 border-black">Shope Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Categories Sections -->
+
+    <!-- Start Reviews Section -->
+    <section class="review" id="review">
+        <div class="container">
+            <div class="head text-center my-4">
+                <h2 class="fw-bold">Customer's <span class="py-2 text-white">Review</span></h2>
+            </div>
+            <div id="owl-demo3" class="owl-carousel owl-theme d-block">
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="person-image py-3">
+                        <img class="rounded-circle" src="image/review-1.jpg" alt="review-1">
+                    </div>
+                    <div class="review-info">
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem inventore earum ipsam nam qui adipisci enim quis officiis officia eveniet architecto quam corrupti aperiam.</p>
+                        <h4 class="fw-bold">John Deo</h4>
+                        <div class="stars">
+                            <div class="rate-stars my-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="person-image py-3">
+                        <img class="rounded-circle" src="image/review-2.jpg" alt="review-2">
+                    </div>
+                    <div class="review-info">
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem inventore earum ipsam nam qui adipisci enim quis officiis officia eveniet architecto quam corrupti aperiam.</p>
+                        <h4 class="fw-bold">Bili</h4>
+                        <div class="stars">
+                            <div class="rate-stars my-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="person-image py-3">
+                        <img class="rounded-circle" src="image/review-3.jpg" alt="review-3">
+                    </div>
+                    <div class="review-info">
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem inventore earum ipsam nam qui adipisci enim quis officiis officia eveniet architecto quam corrupti aperiam.</p>
+                        <h4 class="fw-bold">John Karter</h4>
+                        <div class="stars">
+                            <div class="rate-stars my-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item shadow py-3 px-2 rounded-3 text-center m-2">
+                    <div class="person-image py-3">
+                        <img class="rounded-circle" src="image/review-4.jpg" alt="review-4">
+                    </div>
+                    <div class="review-info">
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem inventore earum ipsam nam qui adipisci enim quis officiis officia eveniet architecto quam corrupti aperiam.</p>
+                        <h4 class="fw-bold">John Wick</h4>
+                        <div class="stars">
+                            <div class="rate-stars my-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Reviews Section -->
+
+    <!-- Start Blog Section -->
+    <div class="blogs" id="blogs">
+        <div class="container">
+            <div class="head text-center my-4">
+                <h2 class="fw-bold">Our <span class="py-2 text-white">Blogs</span></h2>
+            </div>
+            <div class="row gy-3">
+                <div class="col-lg-4">
+                    <div class="blog-cards shadow-lg rounded-2">
+                        <div class="blog-image rounded-top position-relative">
+                            <img class="w-100 rounded-top" src="image/blogs-1.jpg" alt="blogs-1">
+                            <div class="overlay position-absolute w-100 h-100 rounded-top d-flex justify-content-center align-items-center flex-column text-white">
+                                <h5>Fresh Fruit</h5>
+                                <div class="blog-icons">
+                                    <i class="fa-solid fa-magnifying-glass-plus me-1"></i>
+                                    <i class="fa-solid fa-image me-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-info">
+                            <div class="main-title d-flex justify-content-between align-items-center border-bottom px-2">
+                                <p class="my-1"><i class="fa-solid fa-user"></i> By User</p>
+                                <p class="my-1"><i class="fa-solid fa-calendar"></i> 1st,May,2021</p>
+                            </div>
+                            <div class="review-data px-2">
+                                <h4 class="my-2">Fresh And Organic Vegitables And Fruits</h4>
+                                <p class="lead">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Repellat Numquam Molestias Cupiditate Velit, Magni Pariatur</p>
+                                <button class="btn border-1 border-black mb-3">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-cards shadow-lg rounded-2">
+                        <div class="blog-image rounded-top position-relative">
+                            <img class="w-100 rounded-top" src="image/blogs-2.jpg" alt="blogs-2">
+                            <div class="overlay position-absolute w-100 h-100 rounded-top d-flex justify-content-center align-items-center flex-column text-white">
+                                <h5>Fresh Fruit</h5>
+                                <div class="blog-icons">
+                                    <i class="fa-solid fa-magnifying-glass-plus me-1"></i>
+                                    <i class="fa-solid fa-image me-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-info">
+                            <div class="main-title d-flex justify-content-between align-items-center border-bottom px-2">
+                                <p class="my-1"><i class="fa-solid fa-user"></i> By User</p>
+                                <p class="my-1"><i class="fa-solid fa-calendar"></i> 1st,May,2021</p>
+                            </div>
+                            <div class="review-data px-2">
+                                <h4 class="my-2">Fresh And Organic Vegitables And Fruits</h4>
+                                <p class="lead">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Repellat Numquam Molestias Cupiditate Velit, Magni Pariatur</p>
+                                <button class="btn border-1 border-black mb-3">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-cards shadow-lg rounded-2">
+                        <div class="blog-image rounded-top position-relative">
+                            <img class="w-100 rounded-top" src="image/Culinary_fruits_front_view.jpg" alt="blogs-3">
+                            <div class="overlay position-absolute w-100 h-100 rounded-top d-flex justify-content-center align-items-center flex-column text-white">
+                                <h5>Fresh Fruit</h5>
+                                <div class="blog-icons">
+                                    <i class="fa-solid fa-magnifying-glass-plus me-1"></i>
+                                    <i class="fa-solid fa-image me-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-info">
+                            <div class="main-title d-flex justify-content-between align-items-center border-bottom px-2">
+                                <p class="my-1"><i class="fa-solid fa-user"></i> By User</p>
+                                <p class="my-1"><i class="fa-solid fa-calendar"></i> 1st,May,2021</p>
+                            </div>
+                            <div class="review-data px-2">
+                                <h4 class="my-2">Fresh And Organic Vegitables And Fruits</h4>
+                                <p class="lead">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Repellat Numquam Molestias Cupiditate Velit, Magni Pariatur</p>
+                                <button class="btn border-1 border-black mb-3">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Blog Section -->
+
+    <!-- Start Contact Section -->
+    <div class="contact py-5" id="contact">
+        <div class="container">
+            <div class="row shadow-lg gy-3 p-3">
+                <div class="col-md-3">
+                    <div class="info-cotnact">
+                        <div class="information">
+                            <h4>Groco <i class="fas fa-shopping-basket main-color"></i></h4>
+                            <p class="mt-3">Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Sapiente Amet Optio, Quas Explicabo Ipsum Itaque, Impedit Modi Fugit Reiciendis Deserunt Possimus, Molestiae Aliquid Porro Laborum Illum Facere Earum Assumenda.</p>
+                            <div class="social-icons">
+                                <a class="me-2 text-center" href="#"><i class="fa-brands fa-facebook-f rounded-2"></i></a>
+                                <a class="me-2 text-center" href="#"><i class="fa-brands fa-twitter rounded-2"></i></a>
+                                <a class="me-2 text-center" href="#"><i class="fa-brands fa-google-plus-g rounded-2"></i></a>
+                                <a class="me-2 text-center" href="#"><i class="fa-brands fa-linkedin-in rounded-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="cotnact-numbers">
+                        <div class="information">
+                            <h4>Content Info</h4>
+                            <div class="numbers mt-3">
+                                <div class="my-2"><i class="fa-solid fa-phone me-1"></i> +123-4567-890</div>
+                                <div class="my-2"><i class="fa-solid fa-phone me-1"></i> +111-222-333</div>
+                                <div class="my-2"><i class="fa-solid fa-envelope me-1"></i> adelNfahmy@gmil.com</div>
+                                <div class="my-2"><i class="fa-solid fa-location-dot me-1"></i> Cairo, Egypt - 002</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="links-cotnact">
+                        <div class="information">
+                            <h4>Quick Links</h4>
+                            <div class="links-page mt-3 d-flex justify-content-center flex-column">
+                                <a class="mb-2" href="#home"><i class="fa-solid fa-arrow-right me-1"></i> Home</a>
+                                <a class="mb-2" href="#features"><i class="fa-solid fa-arrow-right me-1"></i> Features</a>
+                                <a class="mb-2" href="#products"><i class="fa-solid fa-arrow-right me-1"></i> Products</a>
+                                <a class="mb-2" href="#categories"><i class="fa-solid fa-arrow-right me-1"></i> Categories</a>
+                                <a class="mb-2" href="#review"><i class="fa-solid fa-arrow-right me-1"></i> Reivews</a>
+                                <a class="mb-2" href="#blogs"><i class="fa-solid fa-arrow-right me-1"></i> Blogs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="news-cotnact">
+                        <div class="information">
+                            <h4 class="mb-3">Newsletter</h4>
+                            <label for="email">Subscribe For Latest Updates</label>
+                            <input class="form-control mt-1 shadow" type="email" name="email" id="email" placeholder="Enter Your Email">
+                            <button class="btn border-1 border-black mt-3">Subscribe</button>
+                            <div class="payment mt-2">
+                                <a href="#"><i class="fa-brands fa-cc-visa visa"></i></a>
+                                <a href="#"><i class="fa-brands fa-cc-mastercard masterCard"></i></a>
+                                <a href="#"><i class="fa-brands fa-cc-paypal paypal"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- Start Footer -->
+    <footer class="py-2 bg-dark text-white text-center">
+        <div class="container">
+            <p class="fs-5 m-0">Created By <span>exm@abc.com</span> | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
